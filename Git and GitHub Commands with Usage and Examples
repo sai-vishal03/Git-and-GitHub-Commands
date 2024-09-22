@@ -1,0 +1,150 @@
+Git and GitHub Commands
+
+Git and GitHub Commands with Usage and Examples
+
+1. git init
+When to use: To start tracking a project with Git for the first time.
+Example:
+"git init"
+Used when creating a new project folder for version control.
+
+2. git status
+When to use: To check the status of files—whether they’re staged, unstaged, or untracked.
+Example:
+"git status"
+Used to see if any files are ready to be committed.
+
+
+3. git add <file> | git add .
+When to use: To add specific files (<file>) or all files (.) to the staging area.
+Example:
+"git add index.html"
+"git add ."
+Used after making changes to prepare them for a commit.
+
+4. git rm --cached <file>
+When to use: To remove a file from the staging area without deleting it.
+Example:
+"git rm --cached style.css"
+Used when you mistakenly staged a file but don’t want it included in the next commit.
+
+5. git commit -m "message"
+When to use: To commit staged changes with a message.
+Example:
+"git commit -m 'Added homepage layout'"
+Used after staging files to save them in the repository.
+
+6. git log
+When to use: To see the full commit history.
+Example:
+"git log"
+Used to review all past commits.
+
+7. git log --oneline
+When to use: To view a simplified commit history.
+Example:
+"git log --oneline"
+Used when you want a quick overview of commits.
+
+Working with Versions
+8. git checkout <commit ID>
+When to use: To switch the project to a previous commit/version.
+Example:
+"git checkout 123abc"
+Used when you want to temporarily go back to a previous commit.
+
+9. git revert <commit ID>
+When to use: To undo changes from a previous commit by creating a new one.
+Example:
+"git revert 123abc"
+Used to undo a specific commit without rewriting history.
+
+10. git reset <commit ID> --hard
+When to use: To permanently delete commits and changes after the specified commit.
+Example:
+"git reset 123abc --hard"
+Used when you want to remove all changes after a certain commit, and you don’t need them.
+
+Branching and Merging
+11. git branch <branch name>
+When to use: To create a new branch for feature development.
+Example:
+"git branch feature-login"
+Used when starting work on a new feature.
+
+12. git checkout <branch name>
+When to use: To switch to an existing branch.
+Example:
+"git checkout feature-login"
+Used when you want to switch to the branch you’re working on.
+
+13. git checkout -b <branch name>
+When to use: To create and switch to a new branch immediately.
+Example:
+"git checkout -b feature-profile"
+Used to both create and start working on a new feature branch.
+
+14. git merge <branch name>
+When to use: To merge changes from a feature branch into the current branch (typically master).
+Example:
+"git checkout master"
+"git merge feature-login"
+Used when you finish a feature and want to merge it into the main branch.
+
+15. git branch -D <branch name>
+When to use: To delete a branch after merging or no longer needing it.
+Example:
+"git branch -D feature-login"
+Used when you no longer need a branch.
+
+Working with GitHub
+16. git remote add origin <repo URL>
+When to use: To link a local Git repository to a remote GitHub repository.
+Example:
+"git remote add origin https://github.com/username/repo.git"
+Used when you first connect your local repository to GitHub.
+
+17. git push origin master
+When to use: To push local commits to the GitHub repository (master branch).
+Example:
+"git push origin master"
+Used to upload local changes to GitHub.
+
+18. git clone <repo URL>
+When to use: To download a GitHub repository to your local machine.
+Example:
+"git clone https://github.com/username/repo.git"
+Used when you want to work on a project already hosted on GitHub.
+
+Other Useful Commands
+19. git stash
+When to use: To temporarily save uncommitted changes.
+Example:
+"git stash"
+Used when you need to quickly switch tasks but don't want to commit incomplete work.
+
+20. git stash pop
+When to use: To restore stashed changes back to the working directory.
+Example:
+"git stash pop"
+Used to apply previously stashed changes back to your working directory.
+
+21. git fetch
+When to use: To download changes from the remote repository without merging them.
+Example:
+"git fetch"
+Used to update your local repository with remote changes without modifying your current code.
+
+22. git pull
+When to use: To fetch and merge changes from the remote repository into your branch.
+Example:
+"git pull origin master"
+Used to keep your local branch up to date with changes from the remote repository.
+
+
+Final Notes:
+This command list helps you work efficiently with Git, covering everything from initializing repositories 
+to pushing changes to GitHub. By combining these commands with real-world scenarios, you'll be able to manage
+version control and collaborate on projects effectively.
+
+
